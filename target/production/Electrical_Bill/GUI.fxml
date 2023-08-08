@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <SplitPane fx:id="splitPane" dividerPositions="0.41304347826086957" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane fx:id="leftAncho" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <SplitPane dividerPositions="0.8" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <Label text="Tên:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="20.0" />
+                                          <Label text="Mã số" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0" />
+                                          <Label text="Ngày sinh:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="80.0" />
+                                          <Label text="Kiểu cán bộ:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="110.0" />
+                                          <Label text="Số bài báo" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="140.0" />
+                                          <Label text="Số giờ dạy:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="170.0" />
+                                          <Label layoutX="10.0" layoutY="10.0" text="Số giờ phục vụ:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="200.0" />
+                                          <TextField AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="20.0" />
+                                          <TextField AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="50.0" />
+                                          <TextField AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="80.0" />
+                                          <TextField AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="110.0" />
+                                          <TextField AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="140.0" />
+                                          <TextField AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="170.0" />
+                                          <Button mnemonicParsing="false" text="Thêm cán bộ" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="250.0" />
+                                          <TextField layoutX="10.0" layoutY="10.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="200.0" />
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <CheckBox mnemonicParsing="false" text="Tên" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="20.0" />
+                                          <CheckBox layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Đơn vị" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="20.0" />
+                                          <CheckBox layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Số điện thoại" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="20.0" />
+                                          <AnchorPane prefHeight="25.0" prefWidth="370.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="60.0">
+                                             <children>
+                                                <TextField prefWidth="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <Button mnemonicParsing="false" text="Tìm kiếm" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="330.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="100.0">
+                                             <children>
+                                                <TextField prefWidth="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                <Button mnemonicParsing="false" text="Lọc" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane fx:id="rightAncho" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LeftAnchorPaneController">
+   <children>
+      <SplitPane dividerPositions="0.7562814070351759" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label text="Mã số công tơ:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="20.0" />
+                  <Label text="Họ tên chủ hộ:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0" />
+                  <Label text="Địa chỉ:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="80.0" />
+                  <Label text="Chỉ số cữ:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="110.0" />
+                  <Label text="Chỉ số mới" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="140.0" />
+                  <Label text="Thành tiền" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="170.0" />
+                  <TextField fx:id="tfMeterID" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="20.0" />
+                  <TextField fx:id="tfUserName" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="50.0" />
+                  <TextField fx:id="tfAddress" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="80.0" />
+                  <TextField fx:id="tfPrevious" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="110.0" />
+                  <TextField fx:id="tfNew" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="140.0" />
+                  <TextField fx:id="tfCash" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="170.0" />
+                  <Button fx:id="btAdd" mnemonicParsing="false" onAction="#addCadres" text="Xuất hóa đơn" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="250.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <CheckBox fx:id="cbname" mnemonicParsing="false" text="Mã công tơ" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="20.0" />
+                  <CheckBox fx:id="cbid" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Tên chủ hộ" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="20.0" />
+                  <CheckBox fx:id="cbdob" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Địa chỉ" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="20.0" />
+                  <AnchorPane prefHeight="25.0" prefWidth="370.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+                     <children>
+                        <TextField fx:id="tfsearch" prefWidth="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Button mnemonicParsing="false" onAction="#search" text="Tìm kiếm" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="330.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="100.0">
+                     <children>
+                        <TextField fx:id="tffilterByPapers" prefWidth="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="25.0" />
+                        <Button mnemonicParsing="false" onAction="#filterByPapers" text="Lọc" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="25.0" />
+                        <Label text="Lọc theo thành tiền:" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="50.0" layoutY="20.0" text="Tìm kiếm theo:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="20.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
